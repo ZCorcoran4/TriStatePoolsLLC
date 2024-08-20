@@ -1,0 +1,172 @@
+/* Color palette */
+:root {
+  --primary-color: #ee2422;
+  --secondary-color: #478FFB;
+  --background-color: #ffffff;
+  --menu-color: #a3a3a3;
+  --text-color: #000000;
+}
+
+.container {
+  padding: 10px;
+  background-color: var(--background-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #a3a3a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding:   
+ 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav li:hover a,
+.dropdown-menu li:hover a {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-toggle:focus .dropdown-menu {
+  display: block;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;   
+
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.column img {
+  width: 100%;
+  height: 80%;
+}
+
+.quote-form {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.quote-form input, .quote-form textarea {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--text-color);
+}
+
+.quote-form button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .logo {
+  margin-bottom: 10px;
+}
+
+.footer .social-links {
+  margin-bottom: 10px;
+}
+
+.footer .social-links a {
+  margin: 0 5px;
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .links a {
+  margin: 0 10px;
+}
